@@ -121,41 +121,22 @@
                 <span class="flex items-center gap-2"><i class="fa-solid fa-user-shield text-brand-gold"></i> Garantía de Autenticidad</span>
             </div>
 
-            <!-- 2. VIDEO DE MARKETING ESTRATÉGICO -->
-            <div class="max-w-4xl mx-auto rounded-3xl border border-brand-gold/20 overflow-hidden bg-brand-slate shadow-2xl relative aspect-video">
+            <!-- 2. VIDEO DE MARKETING REAL DE LA MARCA -->
+            <div class="max-w-4xl mx-auto rounded-3xl border border-brand-gold/20 overflow-hidden bg-brand-slate shadow-2xl relative aspect-video glow-gold">
                 <!-- Miniatura de Video y Botón Play Interactivo -->
                 <div id="video-placeholder" class="absolute inset-0 z-10 flex flex-col items-center justify-center bg-cover bg-center bg-no-repeat cursor-pointer group"
-                     style="background-image: linear-gradient(rgba(7, 7, 10, 0.75), rgba(7, 7, 10, 0.75)), url('https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=1200&q=80');">
+                     style="background-image: linear-gradient(rgba(7, 7, 10, 0.65), rgba(7, 7, 10, 0.65)), url('https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=1200&q=80');">
                     
                     <div class="bg-brand-gold text-brand-dark w-20 h-20 rounded-full flex items-center justify-center transition transform group-hover:scale-110 duration-300 shadow-xl shadow-brand-gold/20">
                         <i class="fa-solid fa-play text-2xl ml-1"></i>
                     </div>
-                    <span class="mt-4 font-serif font-bold text-white text-lg tracking-wider group-hover:text-brand-gold transition">Descubre el Poder de una Fragancia Perfecta</span>
-                    <span class="text-xs text-slate-400 mt-1">Video interactivo: ¿Cómo elegir un perfume que deje huella? (1:30 Min)</span>
+                    <span class="mt-4 font-serif font-bold text-white text-lg tracking-wider group-hover:text-brand-gold transition uppercase">Reproducir Video Presentación</span>
+                    <span class="text-xs text-slate-400 mt-1">Descubre la colección exclusiva de Esencia Total</span>
                 </div>
 
-                <!-- Reproductor de Video Emulado -->
-                <div id="video-player" class="hidden w-full h-full flex flex-col justify-between p-4 bg-slate-950">
-                    <div class="flex justify-between items-center text-xs text-slate-400">
-                        <span><i class="fa-solid fa-circle text-brand-gold animate-pulse mr-1.5"></i> REPRODUCIENDO: Esencia Total Experience</span>
-                        <button onclick="stopMockVideo()" class="text-slate-400 hover:text-white"><i class="fa-solid fa-xmark text-lg"></i></button>
-                    </div>
-                    <!-- Contenido visual simulado -->
-                    <div class="flex flex-col items-center justify-center space-y-4 py-8">
-                        <div class="text-center max-w-md p-6 bg-slate-900/60 rounded-2xl border border-brand-gold/10">
-                            <i class="fa-solid fa-droplet text-brand-gold text-3xl mb-3 animate-bounce"></i>
-                            <h4 class="font-serif text-lg text-white mb-2">Despertando Recuerdos Olfativos</h4>
-                            <p class="text-xs text-slate-400">La memoria olfativa procesa las fragancias directamente en el sistema límbico, asociándolas instantáneamente con el éxito, la elegancia y la atracción.</p>
-                        </div>
-                    </div>
-                    <!-- Controles de Video -->
-                    <div class="flex items-center justify-between text-xs text-slate-400 border-t border-slate-900 pt-3">
-                        <button onclick="stopMockVideo()" class="hover:text-white"><i class="fa-solid fa-pause"></i> Pausar</button>
-                        <div class="h-1 bg-slate-800 flex-1 mx-4 rounded-full overflow-hidden">
-                            <div class="w-1/2 h-full bg-brand-gold rounded-full"></div>
-                        </div>
-                        <span>00:45 / 01:30</span>
-                    </div>
+                <!-- Contenedor del Reproductor de Video Real de Google Drive -->
+                <div id="video-player-container" class="hidden absolute inset-0 w-full h-full bg-black">
+                    <!-- Se inyectará el iframe dinámicamente para optimizar tiempos de carga -->
                 </div>
             </div>
         </section>
@@ -270,7 +251,7 @@
                         </div>
                     </div>
 
-                    <!-- Pregunta 2 (Hidden by default) -->
+                    <!-- Pregunta 2 -->
                     <div id="step-2" class="hidden transition-all duration-300">
                         <h3 class="text-base font-bold text-white mb-4">Paso 2: ¿Dónde o en qué momento deseas usar principalmente este perfume?</h3>
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -293,7 +274,7 @@
                         </div>
                     </div>
 
-                    <!-- Pregunta 3 (Hidden by default) -->
+                    <!-- Pregunta 3 -->
                     <div id="step-3" class="hidden transition-all duration-300">
                         <h3 class="text-base font-bold text-white mb-4">Paso 3: ¿Qué tipo de notas aromáticas te resultan más atractivas?</h3>
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -489,16 +470,21 @@
 
     <!-- Lógica de Interacciones -->
     <script>
-        // Simulación de Reproductor de Video
+        // Carga e inserción dinámica del video real de Google Drive
         document.getElementById('video-placeholder').addEventListener('click', function() {
             this.classList.add('hidden');
-            document.getElementById('video-player').classList.remove('hidden');
+            const playerContainer = document.getElementById('video-player-container');
+            
+            // Inyectamos el iframe con la URL del video de Google Drive adaptada para vista previa (embed)
+            playerContainer.innerHTML = `
+                <iframe 
+                    src="https://drive.google.com/file/d/1ZnwgA4baRGClAlvDSPcTcMqYtFd9f8wK/preview" 
+                    class="w-full h-full border-0 rounded-3xl" 
+                    allow="autoplay; encrypted-media" 
+                    allowfullscreen>
+                </iframe>`;
+            playerContainer.classList.remove('hidden');
         });
-
-        function stopMockVideo() {
-            document.getElementById('video-player').classList.add('hidden');
-            document.getElementById('video-placeholder').classList.remove('hidden');
-        }
 
         // FAQs Accordion
         function toggleFAQ(id) {
@@ -546,7 +532,7 @@
             let recommendation = "";
             let description = "";
 
-            // Lógica de recomendación simplificada pero sofisticada
+            // Lógica de recomendación según las preferencias
             if (userAnswers[3] === 'Amaderadas & Cuero') {
                 recommendation = "Maderas de Lujo & Cuero Oriental";
                 description = "Perfecto para proyectar estatus y poder. Sugerimos fragancias icónicas y de proyección premium como Bleu de Chanel (Eau de Parfum) o Tom Ford Ombré Leather.";
