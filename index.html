@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Esencia Total - Eleva tu Presencia con la Fragancia Ideal</title>
+    <title>HND Haute Parfumerie | Elegancia, Poder y Sofisticación</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- FontAwesome para Iconos -->
+    <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
@@ -19,13 +19,14 @@
                         serif: ['Cinzel', 'serif'],
                     },
                     colors: {
-                        brand: {
-                            gold: '#D4AF37',
-                            goldLight: '#F3E5AB',
-                            green: '#00D16C',
-                            dark: '#07070A',
-                            slate: '#12121A',
-                            card: '#1A1A24'
+                        luxury: {
+                            gold: '#D4AF37',       // Oro mate elegante
+                            goldLight: '#F3E5AB',  // Brillo champaña
+                            goldDark: '#9A7B1C',   // Oro envejecido
+                            obsidian: '#070708',   // Negro absoluto
+                            charcoal: '#111115',   // Gris oscuro premium
+                            smoke: '#1C1C24',      // Contenedores flotantes
+                            gray: '#8E8E93',       // Texto secundario refinado
                         }
                     }
                 }
@@ -33,287 +34,238 @@
         }
     </script>
     <style>
-        .gradient-bg {
-            background: radial-gradient(circle at 50% 0%, rgba(212, 175, 55, 0.12) 0%, rgba(7, 7, 10, 1) 75%);
+        /* Estilos de scrollbar personalizados */
+        ::-webkit-scrollbar {
+            width: 6px;
         }
-        .glow-gold {
-            box-shadow: 0 0 20px rgba(212, 175, 55, 0.25);
-            transition: all 0.3s ease;
+        ::-webkit-scrollbar-track {
+            background: #070708;
         }
-        .glow-gold:hover {
-            box-shadow: 0 0 30px rgba(212, 175, 55, 0.5);
+        ::-webkit-scrollbar-thumb {
+            background: #D4AF37;
+            border-radius: 10px;
         }
-        .glow-whatsapp {
-            box-shadow: 0 0 20px rgba(0, 209, 108, 0.2);
-            transition: all 0.3s ease;
+        /* Gradientes y efectos premium */
+        .radial-luxury {
+            background: radial-gradient(circle at 50% 30%, rgba(212, 175, 55, 0.08) 0%, rgba(7, 7, 8, 1) 80%);
         }
-        .glow-whatsapp:hover {
-            box-shadow: 0 0 30px rgba(0, 209, 108, 0.5);
+        .text-glow-gold {
+            text-shadow: 0 0 15px rgba(212, 175, 55, 0.4);
         }
-        .border-gold-gradient {
-            border-image: linear-gradient(to right, #D4AF37, #F3E5AB, #9A7B1C) 1;
+        .border-gold-subtle {
+            border: 1px solid rgba(212, 175, 55, 0.15);
+        }
+        .border-gold-subtle:hover {
+            border: 1px solid rgba(212, 175, 55, 0.4);
+        }
+        .blur-overlay {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        /* Transiciones fluidas */
+        .cart-transition {
+            transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
         }
     </style>
 </head>
-<body class="bg-brand-dark text-slate-200 font-sans antialiased selection:bg-brand-gold selection:text-brand-dark">
+<body class="bg-luxury-obsidian text-slate-100 font-sans antialiased selection:bg-luxury-gold selection:text-luxury-obsidian overflow-x-hidden">
 
-    <!-- Barra de Notificación de Envío / Urgencia -->
-    <div class="bg-gradient-to-r from-amber-600 via-brand-gold to-yellow-600 text-brand-dark py-2 px-4 text-center text-xs md:text-sm font-bold tracking-wider uppercase">
-        ⚡ Envíos garantizados a toda Bolivia (Santa Cruz, La Paz, Cochabamba y más). Asesoramiento 100% Personalizado.
+    <!-- BARRA EXCLUSIVA DE NOTIFICACIONES -->
+    <div class="bg-gradient-to-r from-luxury-goldDark via-luxury-gold to-luxury-goldDark text-luxury-obsidian py-2 px-4 text-center text-xs font-bold tracking-[0.2em] uppercase">
+        ⚡ ENVIOS GARANTIZADOS A TODA BOLIVIA | ATENCIÓN PERSONALIZADA VIP POR WHATSAPP
     </div>
 
-    <!-- Header / Nav -->
-    <header class="border-b border-slate-900 bg-brand-dark/95 sticky top-0 z-40 backdrop-blur-md">
-        <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
-            <div class="flex items-center space-x-2">
-                <span class="font-serif font-extrabold text-xl md:text-2xl tracking-widest text-white">ESENCIA<span class="text-brand-gold">TOTAL</span></span>
-            </div>
+    <!-- HEADER / NAVEGACIÓN PRINCIPAL -->
+    <header class="border-b border-white/5 bg-luxury-obsidian/90 sticky top-0 z-40 blur-overlay">
+        <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
             
-            <!-- CTAs Rápidos en Navbar -->
-            <div class="flex items-center space-x-4">
-                <a href="https://wa.me/59164521957?text=Hola%20Esencia%20Total%2C%20quiero%20recibir%20asesoramiento%20personalizado%20sobre%20mi%20fragancia%20ideal." 
+            <!-- Logo con estilo de marca de alta costura -->
+            <div class="flex flex-col">
+                <span class="font-serif font-black text-2xl tracking-[0.25em] text-white leading-none">HINODE</span>
+                <span class="text-[9px] tracking-[0.45em] text-luxury-gold font-bold uppercase mt-1">HAUTE PARFUMERIE</span>
+            </div>
+
+            <!-- Navegación de sección rápida (Anclas) -->
+            <nav class="hidden md:flex items-center space-x-10 text-xs font-semibold uppercase tracking-[0.15em] text-luxury-gray">
+                <a href="#hero" class="hover:text-luxury-gold transition-colors duration-300">Inicio</a>
+                <a href="#catalogo" class="hover:text-luxury-gold transition-colors duration-300">Colección</a>
+                <a href="#experiencia" class="hover:text-luxury-gold transition-colors duration-300">El Arte</a>
+                <a href="#preguntas" class="hover:text-luxury-gold transition-colors duration-300">Soporte</a>
+            </nav>
+
+            <!-- Controles de Interacción Rápida -->
+            <div class="flex items-center space-x-6">
+                <!-- Botón WhatsApp de Asesoría Gratuita -->
+                <a href="https://wa.me/59164521957?text=Hola%20HND%20Haute%20Parfumerie%2C%20quisiera%20recibir%20asesor%C3%ADa%20personalizada%20para%20elegir%20mi%20perfume%20ideal." 
                    target="_blank" 
-                   class="hidden md:flex items-center gap-2 text-sm font-semibold text-slate-300 hover:text-white transition">
-                    <i class="fab fa-whatsapp text-brand-green text-lg animate-pulse"></i> Asesoría de Imagen Gratis
+                   class="hidden sm:flex items-center space-x-2 text-xs font-bold tracking-widest uppercase text-slate-300 hover:text-luxury-gold transition-colors duration-300">
+                    <i class="fab fa-whatsapp text-lg text-emerald-500"></i>
+                    <span>Consulta VIP</span>
                 </a>
-                <a href="#test-fragancia" class="bg-brand-gold text-brand-dark px-4 py-2 rounded-full text-xs md:text-sm font-extrabold tracking-wide hover:bg-brand-goldLight transition glow-gold">
-                    Encuentra tu Firma Olfativa
-                </a>
+
+                <!-- Ícono de Carrito Flotante con Contador Activo -->
+                <button onclick="toggleCart(true)" class="relative p-2 hover:text-luxury-gold transition-colors duration-300 focus:outline-none" aria-label="Abrir Carrito">
+                    <i class="fa-solid fa-bag-shopping text-xl"></i>
+                    <span id="cart-badge" class="absolute -top-1 -right-1 bg-luxury-gold text-luxury-obsidian font-bold text-[10px] w-5 h-5 rounded-full flex items-center justify-center border-2 border-luxury-obsidian scale-0 transition-transform duration-300">0</span>
+                </button>
             </div>
         </div>
     </header>
 
-    <!-- Contenido Principal con fondo de gradiente radial -->
-    <main class="gradient-bg min-h-screen">
+    <!-- MAIN WRAPPER CON FONDO RADIAL PREMIUM -->
+    <main class="radial-luxury min-h-screen">
 
-        <!-- 1. SECCIÓN HERO (Primer Impacto) -->
-        <section class="max-w-5xl mx-auto px-4 pt-12 pb-20 text-center">
-            <div class="inline-flex items-center gap-2 bg-slate-950/80 border border-brand-gold/30 rounded-full px-4 py-2 text-xs font-semibold text-brand-gold mb-8 uppercase tracking-widest">
-                <i class="fa-solid fa-crown"></i> Alta Perfumería & Estilo Personal
-            </div>
+        <!-- 1. HERO SECTION (BANNER PRINCIPAL) -->
+        <section id="hero" class="max-w-7xl mx-auto px-6 pt-16 pb-24 flex flex-col lg:flex-row items-center gap-16">
             
-            <!-- H1 Directo y Persuasivo -->
-            <h1 class="font-serif text-4xl md:text-6xl font-extrabold tracking-wide text-white mb-6 leading-tight max-w-4xl mx-auto">
-                Tu perfume dice más de ti que <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-gold via-brand-goldLight to-amber-500">mil palabras</span>
-            </h1>
-            
-            <!-- Subtítulo de Conversión -->
-            <p class="text-base md:text-xl text-slate-300 max-w-3xl mx-auto mb-12 leading-relaxed">
-                Es lo primero que las personas perciben cuando llegas <span class="text-brand-gold font-semibold">y lo último que recuerdan cuando te vas</span>. En Esencia Total te ayudamos a encontrar tu firma olfativa ideal para proyectar la elegancia y sofisticación que mereces.
-            </p>
-
-            <!-- Botones CTA Hero (Doble Llamado: Asesoramiento Directo y Buscador de Perfumes) -->
-            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-14 max-w-xl mx-auto">
-                <a href="https://wa.me/59164521957?text=Hola%20Esencia%20Total%2C%20quiero%20recibir%20asesoramiento%20personalizado%20sobre%20mi%20fragancia%20ideal." 
-                   target="_blank" 
-                   class="w-full bg-brand-gold hover:bg-brand-goldLight text-brand-dark font-extrabold py-4 px-8 rounded-full transition text-sm md:text-base flex items-center justify-center gap-3 glow-gold">
-                    <i class="fab fa-whatsapp text-xl"></i> ASESORAMIENTO PERSONALIZADO
-                </a>
-                <a href="#test-fragancia" class="w-full bg-slate-900/60 hover:bg-slate-800/80 text-white border border-slate-700/60 font-bold py-4 px-8 rounded-full transition text-sm flex items-center justify-center gap-3">
-                    <i class="fa-solid fa-wand-magic-sparkles text-brand-gold"></i> Hacer Test de Aroma
-                </a>
-            </div>
-
-            <!-- Micro-copy de Confianza -->
-            <div class="flex flex-wrap items-center justify-center gap-6 text-xs text-slate-400 mb-14 border-t border-slate-900 pt-6">
-                <span class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-gold"></i> Fragancias 100% Originales</span>
-                <span class="flex items-center gap-2"><i class="fa-solid fa-truck text-brand-gold"></i> Entregas Rápidas en Santa Cruz</span>
-                <span class="flex items-center gap-2"><i class="fa-solid fa-user-shield text-brand-gold"></i> Garantía de Autenticidad</span>
-            </div>
-
-            <!-- 2. VIDEO DE MARKETING REAL DE LA MARCA -->
-            <div class="max-w-4xl mx-auto rounded-3xl border border-brand-gold/20 overflow-hidden bg-brand-slate shadow-2xl relative aspect-video glow-gold">
-                <!-- Miniatura de Video y Botón Play Interactivo -->
-                <div id="video-placeholder" class="absolute inset-0 z-10 flex flex-col items-center justify-center bg-cover bg-center bg-no-repeat cursor-pointer group"
-                     style="background-image: linear-gradient(rgba(7, 7, 10, 0.65), rgba(7, 7, 10, 0.65)), url('https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=1200&q=80');">
-                    
-                    <div class="bg-brand-gold text-brand-dark w-20 h-20 rounded-full flex items-center justify-center transition transform group-hover:scale-110 duration-300 shadow-xl shadow-brand-gold/20">
-                        <i class="fa-solid fa-play text-2xl ml-1"></i>
-                    </div>
-                    <span class="mt-4 font-serif font-bold text-white text-lg tracking-wider group-hover:text-brand-gold transition uppercase">Reproducir Video Presentación</span>
-                    <span class="text-xs text-slate-400 mt-1">Descubre la colección exclusiva de Esencia Total</span>
+            <!-- Texto Persuasivo de Marketing de Lujo -->
+            <div class="w-full lg:w-1/2 space-y-8 text-left">
+                <div class="inline-flex items-center gap-2 bg-white/5 border border-white/10 px-4 py-2 rounded-full text-[10px] font-bold tracking-[0.2em] text-luxury-gold uppercase">
+                    <i class="fa-solid fa-award text-xs"></i> Fragancias Ganadoras a Nivel Mundial
                 </div>
-
-                <!-- Contenedor del Reproductor de Video Real de Google Drive -->
-                <div id="video-player-container" class="hidden absolute inset-0 w-full h-full bg-black">
-                    <!-- Se inyectará el iframe dinámicamente para optimizar tiempos de carga -->
-                </div>
-            </div>
-        </section>
-
-        <!-- 3. BENEFICIOS Y VALOR AGREGADO (5 Puntos Clave) -->
-        <section class="bg-brand-slate/60 border-y border-slate-900 py-20 px-4">
-            <div class="max-w-5xl mx-auto">
-                <div class="text-center mb-16">
-                    <span class="text-brand-gold text-xs font-bold uppercase tracking-widest">El Arte de la Seducción y Estatus</span>
-                    <h2 class="font-serif text-3xl md:text-4xl font-extrabold text-white mt-2 mb-4">
-                        ¿Cómo transformamos tu presencia personal?
-                    </h2>
-                    <p class="text-slate-400 max-w-2xl mx-auto">
-                        Elegir la fragancia correcta no es un capricho; es una decisión estratégica sobre cómo deseas ser percibido por el mundo.
-                    </p>
-                </div>
-
-                <!-- Cuadrícula de 5 Beneficios de la fragancia ideal -->
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- Beneficio 1 -->
-                    <div class="bg-brand-dark/50 border border-slate-800/80 p-6 rounded-2xl hover:border-brand-gold/30 transition duration-300">
-                        <div class="bg-brand-gold/10 text-brand-gold w-12 h-12 rounded-xl flex items-center justify-center mb-6">
-                            <i class="fa-solid fa-shield-halved text-xl"></i>
-                        </div>
-                        <h3 class="text-lg font-bold text-white mb-2">Confianza y Seguridad Absoluta</h3>
-                        <p class="text-slate-400 text-sm leading-relaxed">
-                            Aumenta tu confianza personal en cada paso que das. Sentir que hueles bien activa tu seguridad interna en cualquier entorno social o profesional.
-                        </p>
-                    </div>
-
-                    <!-- Beneficio 2 -->
-                    <div class="bg-brand-dark/50 border border-slate-800/80 p-6 rounded-2xl hover:border-brand-gold/30 transition duration-300">
-                        <div class="bg-brand-gold/10 text-brand-gold w-12 h-12 rounded-xl flex items-center justify-center mb-6">
-                            <i class="fa-solid fa-user-tie text-xl"></i>
-                        </div>
-                        <h3 class="text-lg font-bold text-white mb-2">Presencia e Imagen Inmediata</h3>
-                        <p class="text-slate-400 text-sm leading-relaxed">
-                            Mejora tu presencia e imagen personal de manera inmediata. Un aroma sofisticado completa tu atuendo mejor que cualquier otro accesorio.
-                        </p>
-                    </div>
-
-                    <!-- Beneficio 3 -->
-                    <div class="bg-brand-dark/50 border border-slate-800/80 p-6 rounded-2xl hover:border-brand-gold/30 transition duration-300">
-                        <div class="bg-brand-gold/10 text-brand-gold w-12 h-12 rounded-xl flex items-center justify-center mb-6">
-                            <i class="fa-solid fa-heart text-xl"></i>
-                        </div>
-                        <h3 class="text-lg font-bold text-white mb-2">Aroma Único y Memorable</h3>
-                        <p class="text-slate-400 text-sm leading-relaxed">
-                            Haz que las personas te recuerden siempre por tu aroma único. Conviértete en ese recuerdo agradable que perdura en el aire tras tu partida.
-                        </p>
-                    </div>
-
-                    <!-- Beneficio 4 -->
-                    <div class="bg-brand-dark/50 border border-slate-800/80 p-6 rounded-2xl hover:border-brand-gold/30 transition duration-300">
-                        <div class="bg-brand-gold/10 text-brand-gold w-12 h-12 rounded-xl flex items-center justify-center mb-6">
-                            <i class="fa-solid fa-gem text-xl"></i>
-                        </div>
-                        <h3 class="text-lg font-bold text-white mb-2">Elegancia & Estilo Sofisticado</h3>
-                        <p class="text-slate-400 text-sm leading-relaxed">
-                            Proyecta elegancia y un estilo impecable en todo momento. La sutileza de una fragancia premium demuestra tu atención por los detalles refinados.
-                        </p>
-                    </div>
-
-                    <!-- Beneficio 5 -->
-                    <div class="bg-brand-dark/50 border border-slate-800/80 p-6 rounded-2xl hover:border-brand-gold/30 transition duration-300 md:col-span-2 lg:col-span-1">
-                        <div class="bg-brand-gold/10 text-brand-gold w-12 h-12 rounded-xl flex items-center justify-center mb-6">
-                            <i class="fa-solid fa-wand-magic-sparkles text-xl"></i>
-                        </div>
-                        <h3 class="text-lg font-bold text-white mb-2">Destaca en Eventos Clave</h3>
-                        <p class="text-slate-400 text-sm leading-relaxed">
-                            Destaca con luz propia en tus reuniones de negocios, citas románticas y eventos más importantes. Sé el centro de atención con distinción.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- HERRAMIENTA INTERACTIVA ADICIONAL: TEST PERFILADOR DE FRAGANCIA IDEAL -->
-        <section id="test-fragancia" class="max-w-4xl mx-auto px-4 py-20">
-            <div class="bg-slate-900/90 border-2 border-brand-gold/20 rounded-3xl p-8 shadow-2xl relative overflow-hidden">
                 
-                <div class="absolute -right-16 -top-16 w-36 h-36 bg-brand-gold/5 rounded-full blur-2xl"></div>
+                <h1 class="font-serif text-5xl md:text-7xl font-extrabold tracking-wide text-white leading-tight">
+                    Tu aroma es tu <br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-luxury-gold via-luxury-goldLight to-luxury-goldDark text-glow-gold">
+                        firma invisible
+                    </span>
+                </h1>
+                
+                <p class="text-base md:text-lg text-slate-300 font-light leading-relaxed max-w-xl">
+                    Cada paso deja una estela de estatus y misterio. Descubre la colección exclusiva de <strong class="text-white font-semibold">Hinode Francia & Brasil</strong>, destilados con las notas más finas importadas para el hombre y mujer de presencia magnética.
+                </p>
 
-                <div class="text-center mb-8">
-                    <span class="text-brand-gold text-xs font-bold uppercase tracking-widest">Scent Profiler</span>
-                    <h2 class="font-serif text-2xl md:text-3xl font-extrabold text-white mt-1">Encuentra tu Esencia Ideal en 3 Pasos</h2>
-                    <p class="text-slate-400 text-sm mt-1">Nuestra inteligencia te recomendará la familia olfativa perfecta según tu estilo de vida.</p>
+                <!-- Botones CTA Principales -->
+                <div class="flex flex-col sm:flex-row items-center gap-4 pt-4">
+                    <a href="#catalogo" class="w-full sm:w-auto bg-gradient-to-r from-luxury-goldDark via-luxury-gold to-luxury-goldDark text-luxury-obsidian font-bold text-xs tracking-[0.2em] uppercase py-4 px-10 rounded-full hover:shadow-[0_0_30px_rgba(212,175,55,0.4)] transition-all duration-300 text-center">
+                        Explorar Colección
+                    </a>
+                    <a href="https://wa.me/59164521957?text=Hola%20HND%20Haute%20Parfumerie%2C%20me%20gustar%C3%ADa%20que%20me%20recomienden%20un%20perfume%20de%20acuerdo%20a%20mis%20gustos." 
+                       target="_blank"
+                       class="w-full sm:w-auto bg-transparent border border-white/20 text-white hover:border-luxury-gold font-bold text-xs tracking-[0.2em] uppercase py-4 px-10 rounded-full transition-all duration-300 text-center">
+                        <i class="fab fa-whatsapp mr-2 text-emerald-500"></i> Conseguir Asesoría
+                    </a>
                 </div>
 
-                <!-- Proceso de Test Interactivos -->
-                <div id="quiz-container" class="space-y-6">
-                    <!-- Pregunta 1 -->
-                    <div id="step-1" class="transition-all duration-300">
-                        <h3 class="text-base font-bold text-white mb-4">Paso 1: ¿Cuál es la energía o estilo que más te define?</h3>
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                            <button onclick="selectOption(1, 'Elegancia Clásica & Negocios', 'step-1', 'step-2')" class="bg-brand-dark hover:bg-slate-800 text-left p-4 rounded-xl border border-slate-800 hover:border-brand-gold/50 transition flex items-center justify-between text-sm">
-                                <span>🤵 Elegancia Clásica, Negocios & Poder</span>
-                                <i class="fa-solid fa-chevron-right text-brand-gold"></i>
-                            </button>
-                            <button onclick="selectOption(1, 'Seducción Intensa & Noche', 'step-1', 'step-2')" class="bg-brand-dark hover:bg-slate-800 text-left p-4 rounded-xl border border-slate-800 hover:border-brand-gold/50 transition flex items-center justify-between text-sm">
-                                <span>✨ Seducción Intensa, Misterio & Noche</span>
-                                <i class="fa-solid fa-chevron-right text-brand-gold"></i>
-                            </button>
-                            <button onclick="selectOption(1, 'Frescura Deportiva & Libre', 'step-1', 'step-2')" class="bg-brand-dark hover:bg-slate-800 text-left p-4 rounded-xl border border-slate-800 hover:border-brand-gold/50 transition flex items-center justify-between text-sm">
-                                <span>🍃 Frescura Deportiva, Dinamismo & Aire Libre</span>
-                                <i class="fa-solid fa-chevron-right text-brand-gold"></i>
-                            </button>
-                            <button onclick="selectOption(1, 'Vanguardista & Exclusivo', 'step-1', 'step-2')" class="bg-brand-dark hover:bg-slate-800 text-left p-4 rounded-xl border border-slate-800 hover:border-brand-gold/50 transition flex items-center justify-between text-sm">
-                                <span>💎 Vanguardista, Exótico & Exclusivo</span>
-                                <i class="fa-solid fa-chevron-right text-brand-gold"></i>
-                            </button>
-                        </div>
+                <!-- Sellos de Confianza Minimalistas -->
+                <div class="grid grid-cols-3 gap-4 pt-10 border-t border-white/5">
+                    <div class="text-left">
+                        <p class="font-serif text-lg font-bold text-luxury-gold">100%</p>
+                        <p class="text-[10px] uppercase tracking-wider text-luxury-gray">Originales Importados</p>
                     </div>
-
-                    <!-- Pregunta 2 -->
-                    <div id="step-2" class="hidden transition-all duration-300">
-                        <h3 class="text-base font-bold text-white mb-4">Paso 2: ¿Dónde o en qué momento deseas usar principalmente este perfume?</h3>
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                            <button onclick="selectOption(2, 'Uso Diario & Oficina', 'step-2', 'step-3')" class="bg-brand-dark hover:bg-slate-800 text-left p-4 rounded-xl border border-slate-800 hover:border-brand-gold/50 transition flex items-center justify-between text-sm">
-                                <span>💼 Uso Diario, Oficina & Reuniones Ejecutivas</span>
-                                <i class="fa-solid fa-chevron-right text-brand-gold"></i>
-                            </button>
-                            <button onclick="selectOption(2, 'Citas Románticas & Conquista', 'step-2', 'step-3')" class="bg-brand-dark hover:bg-slate-800 text-left p-4 rounded-xl border border-slate-800 hover:border-brand-gold/50 transition flex items-center justify-between text-sm">
-                                <span>🌹 Citas Románticas, Eventos Sociales & Conquista</span>
-                                <i class="fa-solid fa-chevron-right text-brand-gold"></i>
-                            </button>
-                            <button onclick="selectOption(2, 'Climas Cálidos / Verano', 'step-2', 'step-3')" class="bg-brand-dark hover:bg-slate-800 text-left p-4 rounded-xl border border-slate-800 hover:border-brand-gold/50 transition flex items-center justify-between text-sm">
-                                <span>☀️ Climas Cálidos (Perfecto para la tarde de Santa Cruz)</span>
-                                <i class="fa-solid fa-chevron-right text-brand-gold"></i>
-                            </button>
-                            <button onclick="selectOption(2, 'Galas & Eventos de Noche', 'step-2', 'step-3')" class="bg-brand-dark hover:bg-slate-800 text-left p-4 rounded-xl border border-slate-800 hover:border-brand-gold/50 transition flex items-center justify-between text-sm">
-                                <span>🍷 Ocasiones Especiales, Galas & Fiestas Nocturnas</span>
-                                <i class="fa-solid fa-chevron-right text-brand-gold"></i>
-                            </button>
-                        </div>
+                    <div class="text-left">
+                        <p class="font-serif text-lg font-bold text-luxury-gold">Bolivia</p>
+                        <p class="text-[10px] uppercase tracking-wider text-luxury-gray">Envío Exprés Seguro</p>
                     </div>
-
-                    <!-- Pregunta 3 -->
-                    <div id="step-3" class="hidden transition-all duration-300">
-                        <h3 class="text-base font-bold text-white mb-4">Paso 3: ¿Qué tipo de notas aromáticas te resultan más atractivas?</h3>
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                            <button onclick="selectOption(3, 'Amaderadas & Cuero', 'step-3', 'result')" class="bg-brand-dark hover:bg-slate-800 text-left p-4 rounded-xl border border-slate-800 hover:border-brand-gold/50 transition flex items-center justify-between text-sm">
-                                <span>🪵 Maderas Nobles, Cuero, Tabaco & Vetiver</span>
-                                <i class="fa-solid fa-chevron-right text-brand-gold"></i>
-                            </button>
-                            <button onclick="selectOption(3, 'Dulces & Especiadas', 'step-3', 'result')" class="bg-brand-dark hover:bg-slate-800 text-left p-4 rounded-xl border border-slate-800 hover:border-brand-gold/50 transition flex items-center justify-between text-sm">
-                                <span>🍦 Vainilla, Ámbar, Canela & Notas Especiadas orientales</span>
-                                <i class="fa-solid fa-chevron-right text-brand-gold"></i>
-                            </button>
-                            <button onclick="selectOption(3, 'Frescas & Cítricas', 'step-3', 'result')" class="bg-brand-dark hover:bg-slate-800 text-left p-4 rounded-xl border border-slate-800 hover:border-brand-gold/50 transition flex items-center justify-between text-sm">
-                                <span>🍋 Cítricos Italianos, Menta, Bergamota & Brisa Marina</span>
-                                <i class="fa-solid fa-chevron-right text-brand-gold"></i>
-                            </button>
-                            <button onclick="selectOption(3, 'Florales & Frutales', 'step-3', 'result')" class="bg-brand-dark hover:bg-slate-800 text-left p-4 rounded-xl border border-slate-800 hover:border-brand-gold/50 transition flex items-center justify-between text-sm">
-                                <span>🍒 Frutos Rojos, Flor de Azahar, Jazmín & Lavanda</span>
-                                <i class="fa-solid fa-chevron-right text-brand-gold"></i>
-                            </button>
-                        </div>
+                    <div class="text-left">
+                        <p class="font-serif text-lg font-bold text-luxury-gold">VIP</p>
+                        <p class="text-[10px] uppercase tracking-wider text-luxury-gray">Asesoramiento de Imagen</p>
                     </div>
+                </div>
+            </div>
 
-                    <!-- Resultado Final Calculado Dinámicamente -->
-                    <div id="result-step" class="hidden text-center space-y-6 transition-all duration-300">
-                        <div class="w-16 h-16 bg-brand-gold/10 text-brand-gold rounded-full flex items-center justify-center mx-auto text-3xl animate-bounce">
-                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+            <!-- Visual del Producto Principal (Foco de Lujo) -->
+            <div class="w-full lg:w-1/2 flex justify-center">
+                <div class="relative max-w-md w-full aspect-square border-gold-subtle rounded-3xl p-8 bg-luxury-charcoal/40 flex items-center justify-center group overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-t from-luxury-gold/10 via-transparent to-transparent opacity-50"></div>
+                    <!-- Efecto de aro brillante dorado de fondo -->
+                    <div class="absolute w-72 h-72 rounded-full border border-luxury-gold/10 group-hover:scale-110 transition-transform duration-700"></div>
+                    <div class="absolute w-56 h-56 rounded-full border border-luxury-gold/20 group-hover:rotate-45 transition-transform duration-700"></div>
+                    
+                    <!-- Imagen de Perfume Destacado Hinode (Inebriante) -->
+                    <img src="https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=600&q=80" 
+                         alt="Inebriante Hinode" 
+                         class="z-10 w-64 h-64 object-contain filter drop-shadow-[0_20px_50px_rgba(212,175,55,0.25)] group-hover:scale-105 transition-transform duration-500 rounded-2xl">
+                    
+                    <!-- Tag Flotante -->
+                    <div class="absolute bottom-6 left-6 z-20 bg-luxury-obsidian/85 border border-luxury-gold/30 rounded-lg px-4 py-2">
+                        <p class="text-[9px] uppercase tracking-[0.25em] text-luxury-gold font-bold">Fragancia Destacada</p>
+                        <p class="font-serif text-sm font-semibold text-white">Inebriante Eau de Parfum</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. CATÁLOGO DE PRODUCTOS EXCLUSIVOS -->
+        <section id="catalogo" class="max-w-7xl mx-auto px-6 py-24 border-t border-white/5">
+            
+            <!-- Título y Filtros -->
+            <div class="flex flex-col md:flex-row items-start md:items-end justify-between gap-8 mb-16">
+                <div>
+                    <span class="text-luxury-gold text-xs font-bold uppercase tracking-[0.3em] block mb-2">Exquisite Curated Selection</span>
+                    <h2 class="font-serif text-3xl md:text-5xl font-extrabold text-white">Nuestra Colección Premium</h2>
+                </div>
+
+                <!-- Botones de Filtro en Tiempo Real -->
+                <div class="flex bg-luxury-charcoal p-1.5 rounded-full border border-white/5 self-start md:self-auto">
+                    <button onclick="filterProducts('all')" id="btn-filter-all" class="filter-btn active-filter bg-luxury-gold text-luxury-obsidian text-xs font-bold uppercase tracking-wider py-2.5 px-6 rounded-full transition-all duration-300">
+                        Todos
+                    </button>
+                    <button onclick="filterProducts('masculino')" id="btn-filter-masculino" class="filter-btn text-luxury-gray hover:text-white text-xs font-bold uppercase tracking-wider py-2.5 px-6 rounded-full transition-all duration-300">
+                        Él (Men)
+                    </button>
+                    <button onclick="filterProducts('femenino')" id="btn-filter-femenino" class="filter-btn text-luxury-gray hover:text-white text-xs font-bold uppercase tracking-wider py-2.5 px-6 rounded-full transition-all duration-300">
+                        Ella (Women)
+                    </button>
+                </div>
+            </div>
+
+            <!-- Grid de Tarjetas de Perfumes -->
+            <div id="product-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <!-- Los productos se inyectarán dinámicamente mediante JS -->
+            </div>
+        </section>
+
+        <!-- 3. SECCIÓN EL ARTE DE LA ALTA PERFUMERÍA -->
+        <section id="experiencia" class="bg-luxury-charcoal/50 border-y border-white/5 py-24">
+            <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                
+                <!-- Imagen Artística de Composición -->
+                <div class="relative flex justify-center">
+                    <div class="absolute inset-0 bg-gradient-to-r from-luxury-gold/5 via-transparent to-transparent"></div>
+                    <img src="https://images.unsplash.com/photo-1615397349754-cfa2066a298e?auto=format&fit=crop&w=800&q=80" 
+                         alt="Ingredientes de Perfume de Alta Gama" 
+                         class="rounded-3xl border-gold-subtle filter grayscale contrast-125 hover:grayscale-0 transition-all duration-750 shadow-2xl max-h-[500px] w-full object-cover">
+                </div>
+
+                <!-- Detalle Educativo de Notas -->
+                <div class="space-y-8">
+                    <span class="text-luxury-gold text-xs font-bold uppercase tracking-[0.3em] block">Savoir-Faire</span>
+                    <h3 class="font-serif text-3xl md:text-4xl font-extrabold text-white">¿Por qué elegir Hinode?</h3>
+                    <p class="text-slate-300 font-light leading-relaxed">
+                        Los perfumes Hinode son concebidos por la renombrada casa francesa de fragancias **Robertet**, utilizando aceites esenciales de la más alta concentración y refinación. Su proceso artesanal y fijación extendida garantizan que el aroma te acompañe todo el día.
+                    </p>
+
+                    <!-- Tres pilares olfativos -->
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="bg-luxury-gold/10 text-luxury-gold p-3 rounded-xl border border-luxury-gold/20">
+                                <i class="fa-solid fa-droplet text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold text-base">Fijación de Larga Duración</h4>
+                                <p class="text-luxury-gray text-sm font-light mt-1">Con una concentración de Eau de Parfum de hasta el 23%, perdura en piel por más de 10 horas seguidas.</p>
+                            </div>
                         </div>
-                        <div class="space-y-2">
-                            <h4 class="text-xs font-bold tracking-widest text-brand-gold uppercase">FAMILIA RECOMENDADA</h4>
-                            <h3 id="result-title" class="font-serif text-2xl md:text-3xl font-extrabold text-white">Cargando tu Esencia...</h3>
-                            <p id="result-desc" class="text-slate-400 text-sm max-w-lg mx-auto">Nuestro algoritmo está emparejando tus preferencias de estilo con nuestro catálogo de perfumes importados.</p>
+
+                        <div class="flex items-start gap-4">
+                            <div class="bg-luxury-gold/10 text-luxury-gold p-3 rounded-xl border border-luxury-gold/20">
+                                <i class="fa-solid fa-vial text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold text-base">Ingredientes Exclusivos</h4>
+                                <p class="text-luxury-gray text-sm font-light mt-1">Acuerdos olfativos importados de Grasse, Francia, la capital mundial de la perfumería fina.</p>
+                            </div>
                         </div>
-                        
-                        <!-- CTA Directo al WhatsApp con Enlace Dinámico -->
-                        <div class="pt-4 max-w-md mx-auto">
-                            <a id="result-wa-btn" href="#" target="_blank" class="w-full bg-brand-green hover:bg-emerald-400 text-white font-extrabold py-4 px-6 rounded-full transition text-sm flex items-center justify-center gap-3 glow-whatsapp">
-                                <i class="fab fa-whatsapp text-lg"></i> CONSULTAR PERFUMES DISPONIBLES
-                            </a>
-                            <button onclick="resetQuiz()" class="text-xs text-slate-500 hover:text-white mt-4 block mx-auto underline">Hacer el test otra vez</button>
+
+                        <div class="flex items-start gap-4">
+                            <div class="bg-luxury-gold/10 text-luxury-gold p-3 rounded-xl border border-luxury-gold/20">
+                                <i class="fa-solid fa-hand-holding-heart text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold text-base">Cruelty Free & Sostenible</h4>
+                                <p class="text-luxury-gray text-sm font-light mt-1">Procesos respetuosos con el medio ambiente y sin testeo en animales.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -321,172 +273,327 @@
             </div>
         </section>
 
-        <!-- 4. PRUEBA SOCIAL CON TESTIMONIOS (Ancla de Validación Local) -->
-        <section class="bg-brand-slate/40 border-t border-slate-950 py-20 px-4">
-            <div class="max-w-5xl mx-auto">
-                <div class="text-center mb-16">
-                    <span class="text-brand-gold text-xs font-bold uppercase tracking-widest">Esencia Total Bolivia</span>
-                    <h2 class="font-serif text-3xl md:text-4xl font-extrabold text-white mt-2">Distinguidos por la elegancia</h2>
-                    <p class="text-slate-400 text-sm mt-1">Conoce las valoraciones de nuestros clientes que ya transformaron su imagen personal en Santa Cruz.</p>
-                </div>
-
-                <!-- Tarjetas de testimonios geolocalizados de Santa Cruz -->
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <!-- Testimonio 1 -->
-                    <div class="bg-brand-dark/60 border border-slate-900 p-6 rounded-2xl relative flex flex-col justify-between">
-                        <div>
-                            <div class="flex items-center gap-1 text-amber-400 mb-4 text-xs">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                            <p class="text-slate-300 text-sm italic leading-relaxed mb-6">
-                                "Encontrar un perfume que encaje con el calor cruceño y que a la vez dure todo el día parecía imposible. El equipo de Esencia Total me asesoró con una fragancia cítrica y amaderada impecable. La atención personalizada por WhatsApp es de otro nivel."
-                            </p>
-                        </div>
-                        <div class="flex items-center gap-3 border-t border-slate-900 pt-4">
-                            <div class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center font-serif text-brand-gold font-bold text-sm">
-                                HM
-                            </div>
-                            <div>
-                                <h4 class="text-white font-bold text-sm">Hugo Maldonado</h4>
-                                <p class="text-slate-500 text-xs">Empresario • Equipetrol, Santa Cruz</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Testimonio 2 -->
-                    <div class="bg-brand-dark/60 border border-slate-900 p-6 rounded-2xl relative flex flex-col justify-between">
-                        <div>
-                            <div class="flex items-center gap-1 text-amber-400 mb-4 text-xs">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                            <p class="text-slate-300 text-sm italic leading-relaxed mb-6">
-                                "Mi perfume favorito siempre se agotaba rápido en las tiendas del centro, pero aquí no solo lo conseguí original y con lote de autenticidad verificado, sino que el delivery llegó a mi condominio en Sirari en un par de horas. ¡Recomendadísimo!"
-                            </p>
-                        </div>
-                        <div class="flex items-center gap-3 border-t border-slate-900 pt-4">
-                            <div class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center font-serif text-brand-gold font-bold text-sm">
-                                VP
-                            </div>
-                            <div>
-                                <h4 class="text-white font-bold text-sm">Valeria Pinto</h4>
-                                <p class="text-slate-500 text-xs">Diseñadora de Modas • Sirari, Santa Cruz</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 5. SECCIÓN DE PREGUNTAS FRECUENTES (F.A.Q.) -->
-        <section class="max-w-4xl mx-auto px-4 py-20">
-            <div class="text-center mb-12">
-                <span class="text-brand-gold text-xs font-bold uppercase tracking-widest">Preguntas Frecuentes</span>
-                <h2 class="font-serif text-3xl font-extrabold text-white mt-1">Resolvemos tus dudas</h2>
+        <!-- 4. SECCIÓN PREGUNTAS FRECUENTES -->
+        <section id="preguntas" class="max-w-4xl mx-auto px-6 py-24">
+            <div class="text-center mb-16">
+                <span class="text-luxury-gold text-xs font-bold uppercase tracking-[0.3em] block mb-2">Ayuda y Soporte</span>
+                <h2 class="font-serif text-3xl md:text-4xl font-extrabold text-white">Preguntas de Adquisición</h2>
             </div>
 
             <div class="space-y-4">
                 <!-- FAQ 1 -->
-                <div class="bg-slate-950/80 border border-slate-900 rounded-2xl overflow-hidden transition">
-                    <button onclick="toggleFAQ(1)" class="w-full px-6 py-5 text-left flex items-center justify-between text-white font-bold text-sm md:text-base hover:bg-slate-900">
-                        <span>¿Los perfumes que venden son 100% originales?</span>
-                        <i id="faq-icon-1" class="fa-solid fa-chevron-down text-brand-gold transition-transform"></i>
+                <div class="bg-luxury-charcoal border border-white/5 rounded-2xl overflow-hidden transition-all duration-300">
+                    <button onclick="toggleFAQ(1)" class="w-full px-6 py-5 text-left flex items-center justify-between text-white font-bold hover:bg-white/5">
+                        <span class="text-sm md:text-base">¿Cómo se realiza el pago y la entrega en Bolivia?</span>
+                        <i id="faq-icon-1" class="fa-solid fa-chevron-down text-luxury-gold transition-transform duration-300"></i>
                     </button>
-                    <div id="faq-content-1" class="hidden px-6 pb-5 text-slate-400 text-sm leading-relaxed border-t border-slate-900 pt-3">
-                        Totalmente. En Esencia Total trabajamos exclusivamente con importaciones directas de distribuidores autorizados. Todos los perfumes se entregan cerrados, con su sello de autenticidad y lote original verificable. No comercializamos réplicas de ningún tipo.
+                    <div id="faq-content-1" class="hidden px-6 pb-5 text-luxury-gray text-sm leading-relaxed border-t border-white/5 pt-3">
+                        Al confirmar tu pedido, serás redirigido a nuestro canal exclusivo de WhatsApp. Coordinamos pagos mediante transferencia bancaria, Tigo Money o pago contra entrega (disponible en zonas seleccionadas de Santa Cruz). El envío nacional se gestiona inmediatamente.
                     </div>
                 </div>
 
                 <!-- FAQ 2 -->
-                <div class="bg-slate-950/80 border border-slate-900 rounded-2xl overflow-hidden transition">
-                    <button onclick="toggleFAQ(2)" class="w-full px-6 py-5 text-left flex items-center justify-between text-white font-bold text-sm md:text-base hover:bg-slate-900">
-                        <span>¿Cómo funciona el servicio de asesoría olfativa personalizada?</span>
-                        <i id="faq-icon-2" class="fa-solid fa-chevron-down text-brand-gold transition-transform"></i>
+                <div class="bg-luxury-charcoal border border-white/5 rounded-2xl overflow-hidden transition-all duration-300">
+                    <button onclick="toggleFAQ(2)" class="w-full px-6 py-5 text-left flex items-center justify-between text-white font-bold hover:bg-white/5">
+                        <span class="text-sm md:text-base">¿Ofrecen muestras de fragancias?</span>
+                        <i id="faq-icon-2" class="fa-solid fa-chevron-down text-luxury-gold transition-transform duration-300"></i>
                     </button>
-                    <div id="faq-content-2" class="hidden px-6 pb-5 text-slate-400 text-sm leading-relaxed border-t border-slate-900 pt-3">
-                        Es muy sencillo. Haces clic en nuestro enlace de WhatsApp y uno de nuestros expertos analizará tu tipo de piel, el clima donde vives, tus preferencias (cítricos, dulces, maderas) y la ocasión de uso (trabajo, salidas) para proponerte las 3 opciones perfectas de nuestro catálogo.
+                    <div id="faq-content-2" class="hidden px-6 pb-5 text-luxury-gray text-sm leading-relaxed border-t border-white/5 pt-3">
+                        Sí. Para compras mayores a 2 frascos o si agendas una demostración de imagen en Santa Cruz, incluimos muestras de las fragancias más vendidas de Hinode para que puedas probarlas en tu tipo de piel antes de abrirlas.
                     </div>
                 </div>
 
                 <!-- FAQ 3 -->
-                <div class="bg-slate-950/80 border border-slate-900 rounded-2xl overflow-hidden transition">
-                    <button onclick="toggleFAQ(3)" class="w-full px-6 py-5 text-left flex items-center justify-between text-white font-bold text-sm md:text-base hover:bg-slate-900">
-                        <span>¿Cuánto tardan los envíos dentro de Bolivia?</span>
-                        <i id="faq-icon-3" class="fa-solid fa-chevron-down text-brand-gold transition-transform"></i>
+                <div class="bg-luxury-charcoal border border-white/5 rounded-2xl overflow-hidden transition-all duration-300">
+                    <button onclick="toggleFAQ(3)" class="w-full px-6 py-5 text-left flex items-center justify-between text-white font-bold hover:bg-white/5">
+                        <span class="text-sm md:text-base">¿Tienen garantía de autenticidad?</span>
+                        <i id="faq-icon-3" class="fa-solid fa-chevron-down text-luxury-gold transition-transform duration-300"></i>
                     </button>
-                    <div id="faq-content-3" class="hidden px-6 pb-5 text-slate-400 text-sm leading-relaxed border-t border-slate-900 pt-3">
-                        Para la ciudad de Santa Cruz de la Sierra, las entregas se realizan en el mismo día mediante nuestro servicio de delivery privado. Para el resto de departamentos (La Paz, Cochabamba, Sucre, Tarija, etc.), los envíos se coordinan por encomiendas terrestres o aéreas seguras y tardan entre 24 y 48 horas.
+                    <div id="faq-content-3" class="hidden px-6 pb-5 text-luxury-gray text-sm leading-relaxed border-t border-white/5 pt-3">
+                        Por supuesto. Importamos de manera formal y directa desde los almacenes oficiales de Hinode. Cada producto viene debidamente sellado en su caja original celofanada de fábrica y cuenta con el código de lote impreso para su rastreo de procedencia.
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <!-- 6. FOOTER Y DOBLE CTA FINAL (Último Empuje) -->
-        <section class="max-w-4xl mx-auto px-4 py-16 text-center border-t border-slate-900">
-            <h2 class="font-serif text-3xl md:text-5xl font-extrabold text-white mb-6">
-                ¿Listo para encontrar tu aroma distintivo?
-            </h2>
-            <p class="text-slate-300 max-w-2xl mx-auto mb-10 leading-relaxed text-sm md:text-base">
-                No arriesgues tu dinero comprando a ciegas ni descuides tu presencia. Agenda una consulta de fragancia ideal hoy mismo y sé inolvidable en cada paso que des.
-            </p>
-
-            <!-- Doble CTA Final -->
-            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12 max-w-lg mx-auto">
-                <a href="https://wa.me/59164521957?text=Hola%20Esencia%20Total%2C%20quiero%20recibir%20asesoramiento%20personalizado%20sobre%20mi%20fragancia%20ideal." 
-                   target="_blank" 
-                   class="w-full bg-brand-gold hover:bg-brand-goldLight text-brand-dark font-extrabold py-4 px-8 rounded-full transition text-sm md:text-base flex items-center justify-center gap-3 glow-gold">
-                    <i class="fab fa-whatsapp text-xl"></i> ASESORÍA PERSONALIZADA
-                </a>
-                <a href="#test-fragancia" class="w-full bg-transparent hover:bg-slate-900 text-slate-300 border border-slate-800 hover:border-brand-gold/40 font-bold py-4 px-8 rounded-full transition text-sm flex items-center justify-center gap-2">
-                    <i class="fa-solid fa-arrows-to-dot text-brand-gold"></i> Volver al Test
-                </a>
-            </div>
-
-            <!-- Información Adicional de Esencia Total -->
-            <div class="flex justify-center items-center gap-8 text-xs text-slate-500 flex-wrap">
-                <span>© 2026 Esencia Total. Todos los derechos reservados.</span>
-                <span class="flex items-center gap-1.5"><i class="fa-solid fa-location-dot"></i> Santa Cruz, Bolivia</span>
             </div>
         </section>
 
     </main>
 
-    <!-- FLOATING CHAT WIDGET (WHATSAPP ACCIÓN RÁPIDA) -->
-    <div class="fixed bottom-6 right-6 z-50">
-        <a href="https://wa.me/59164521957?text=Hola%20Esencia%20Total%2C%20quiero%20recibir%20asesoramiento%20personalizado%20sobre%20mi%20fragancia%20ideal." 
-           target="_blank" 
-           class="bg-brand-green text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition glow-whatsapp relative">
-            <i class="fab fa-whatsapp text-3xl"></i>
-            <span class="absolute -top-1 -right-1 bg-red-500 text-white font-bold text-[10px] w-5 h-5 rounded-full flex items-center justify-center border border-brand-dark animate-bounce">1</span>
-        </a>
+    <!-- FOOTER ELEGANTE -->
+    <footer class="border-t border-white/5 bg-luxury-obsidian py-12 px-6">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
+            
+            <div class="flex flex-col items-center md:items-start">
+                <span class="font-serif font-black text-xl tracking-[0.25em] text-white">HINODE</span>
+                <span class="text-[8px] tracking-[0.45em] text-luxury-gold font-bold uppercase">HAUTE PARFUMERIE</span>
+            </div>
+
+            <div class="flex justify-center items-center gap-8 text-xs text-luxury-gray">
+                <span>© 2026 Hinode Exclusive Store. Todos los derechos reservados.</span>
+                <span class="flex items-center gap-1.5"><i class="fa-solid fa-location-dot text-luxury-gold"></i> Santa Cruz, Bolivia</span>
+            </div>
+
+            <div class="flex items-center space-x-4">
+                <a href="https://wa.me/59164521957" target="_blank" class="text-luxury-gray hover:text-emerald-500 transition-colors text-lg"><i class="fab fa-whatsapp"></i></a>
+                <a href="#" class="text-luxury-gray hover:text-luxury-gold transition-colors text-lg"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-luxury-gray hover:text-luxury-gold transition-colors text-lg"><i class="fab fa-facebook-f"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SLIDE-OUT CART PANEL (CARRITO LATERAL DESLIZANTE) -->
+    <!-- Se reemplaza 'blur-sm' por 'backdrop-blur-sm' para evitar que los elementos internos se rendericen borrosos -->
+    <div id="cart-drawer-backdrop" class="fixed inset-0 bg-black/60 z-50 hidden opacity-0 transition-opacity duration-300 backdrop-blur-sm overflow-hidden" onclick="toggleCart(false)">
+        <!-- El Drawer en sí -->
+        <div id="cart-drawer" class="fixed top-0 right-0 h-full w-full sm:w-[450px] bg-luxury-charcoal border-l border-white/10 p-6 shadow-[0_0_50px_rgba(0,0,0,0.8)] flex flex-col justify-between translate-x-full cart-transition" onclick="event.stopPropagation()">
+            
+            <!-- Cabecera del Carrito -->
+            <div class="flex items-center justify-between border-b border-white/5 pb-4">
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-bag-shopping text-luxury-gold text-lg"></i>
+                    <h3 class="font-serif text-lg font-bold text-white tracking-widest uppercase">Mi Carrito</h3>
+                </div>
+                <button onclick="toggleCart(false)" class="text-luxury-gray hover:text-white p-2">
+                    <i class="fa-solid fa-xmark text-xl"></i>
+                </button>
+            </div>
+
+            <!-- Listado de Productos en el Carrito -->
+            <div id="cart-items-container" class="flex-grow overflow-y-auto py-4 space-y-4">
+                <!-- Se inyecta con JS -->
+                <div class="flex flex-col items-center justify-center h-full text-center text-luxury-gray space-y-4">
+                    <i class="fa-solid fa-basket-shopping text-4xl text-white/5"></i>
+                    <p class="text-sm">Tu carrito de lujo está vacío actualmente.</p>
+                    <button onclick="toggleCart(false)" class="text-xs text-luxury-gold hover:underline font-bold uppercase tracking-wider">Explorar perfumes</button>
+                </div>
+            </div>
+
+            <!-- Pie del Carrito (Resumen y Envío a WhatsApp) -->
+            <div class="border-t border-white/5 pt-6 space-y-6">
+                <!-- Datos de envío rápidos para el WhatsApp -->
+                <div class="space-y-3">
+                    <p class="text-xs uppercase tracking-wider text-luxury-gold font-bold">Datos para entrega directa:</p>
+                    <input type="text" id="client-name" placeholder="Tu Nombre Completo" class="w-full bg-luxury-obsidian border border-white/10 rounded-xl px-4 py-2.5 text-sm text-slate-200 placeholder-luxury-gray focus:outline-none focus:border-luxury-gold transition-colors">
+                    <input type="text" id="client-city" placeholder="Ciudad (ej. Santa Cruz, La Paz)" class="w-full bg-luxury-obsidian border border-white/10 rounded-xl px-4 py-2.5 text-sm text-slate-200 placeholder-luxury-gray focus:outline-none focus:border-luxury-gold transition-colors">
+                </div>
+
+                <div class="space-y-2">
+                    <div class="flex justify-between text-sm text-luxury-gray">
+                        <span>Subtotal</span>
+                        <span id="cart-subtotal">Bs. 0</span>
+                    </div>
+                    <div class="flex justify-between text-sm text-luxury-gray">
+                        <span>Envío (Coordinado con asesor)</span>
+                        <span class="text-emerald-500">Gratis / Variable</span>
+                    </div>
+                    <div class="flex justify-between text-base font-bold text-white border-t border-white/5 pt-3">
+                        <span>Total de Pedido</span>
+                        <span id="cart-total" class="text-luxury-gold">Bs. 0</span>
+                    </div>
+                </div>
+
+                <button onclick="sendOrder()" class="w-full bg-gradient-to-r from-luxury-goldDark via-luxury-gold to-luxury-goldDark text-luxury-obsidian py-4 px-6 rounded-full font-bold text-xs tracking-[0.2em] uppercase hover:shadow-[0_0_20px_rgba(212,175,55,0.3)] transition-all duration-300 flex items-center justify-center gap-2">
+                    <i class="fab fa-whatsapp text-base"></i> Confirmar Pedido por WhatsApp
+                </button>
+                <p class="text-[10px] text-center text-luxury-gray">Tu pedido será enviado de inmediato al asesor oficial para coordinar el pago de forma ágil y segura.</p>
+            </div>
+
+        </div>
     </div>
 
-    <!-- Lógica de Interacciones -->
+    <!-- QUICK VIEW MODAL (VISTA RÁPIDA DE DETALLES DE FRAGANCIA) -->
+    <div id="quick-view-backdrop" class="fixed inset-0 bg-black/80 z-50 hidden opacity-0 transition-opacity duration-300 backdrop-blur-sm flex items-center justify-center p-4 overflow-hidden" onclick="toggleQuickView(false)">
+        <div id="quick-view-modal" class="bg-luxury-charcoal border-gold-subtle rounded-3xl max-w-2xl w-full p-8 relative scale-90 transition-transform duration-300" onclick="event.stopPropagation()">
+            <button onclick="toggleQuickView(false)" class="absolute top-6 right-6 text-luxury-gray hover:text-white">
+                <i class="fa-solid fa-xmark text-xl"></i>
+            </button>
+            <div id="quick-view-content">
+                <!-- Se inyectará con JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT DE LÓGICA E INTERACCIONES -->
     <script>
-        // Carga e inserción dinámica del video real de Google Drive
-        document.getElementById('video-placeholder').addEventListener('click', function() {
-            this.classList.add('hidden');
-            const playerContainer = document.getElementById('video-player-container');
-            
-            // Inyectamos el iframe con la URL del video de Google Drive adaptada para vista previa (embed)
-            playerContainer.innerHTML = `
-                <iframe 
-                    src="https://drive.google.com/file/d/1ZnwgA4baRGClAlvDSPcTcMqYtFd9f8wK/preview" 
-                    class="w-full h-full border-0 rounded-3xl" 
-                    allow="autoplay; encrypted-media" 
-                    allowfullscreen>
-                </iframe>`;
-            playerContainer.classList.remove('hidden');
+        // Catálogo de Perfumes de Hinode (Información detallada, notas olfativas reales y de alta calidad)
+        const products = [
+            {
+                id: 'hnd-01',
+                name: 'Inebriante',
+                tagline: 'Seducción extrema y misterio innegable',
+                type: 'Eau de Parfum',
+                gender: 'masculino',
+                price: 360,
+                volume: '100 ml',
+                image: 'https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=600&q=80',
+                description: 'Diseñado para el hombre seductor y elegante. Revela un magnetismo potente y lujoso gracias a sus maderas nobles, notas marinas y el toque de la manzana de oro.',
+                notes: {
+                    salida: 'Manzana de Oro, Limón Siciliano, Bambú',
+                    corazon: 'Acorde Marino, Lavanda de Grasse, Cuero',
+                    fondo: 'Ámbar Negro, Pachulí de Indonesia, Sándalo'
+                }
+            },
+            {
+                id: 'hnd-02',
+                name: 'Empire',
+                tagline: 'El perfume de la victoria y el liderazgo',
+                type: 'Eau de Parfum',
+                gender: 'masculino',
+                price: 290,
+                volume: '100 ml',
+                image: 'https://images.unsplash.com/photo-1523293182086-7651a899d37f?auto=format&fit=crop&w=600&q=80',
+                description: 'La fragancia ganadora del mejor perfume de Brasil. Diseñado para el hombre contemporáneo y enfocado, con una base aromática elegante de maderas y cardamomo.',
+                notes: {
+                    salida: 'Albahaca, Estragón, Bergamota',
+                    corazon: 'Fresia, Jazmín, Geranio de Grasse',
+                    fondo: 'Ámbar Gris, Musk, Maderas Exóticas'
+                }
+            },
+            {
+                id: 'hnd-03',
+                name: 'Grace La Rose Sublime',
+                tagline: 'La máxima sofisticación floral de Grasse',
+                type: 'Eau de Parfum',
+                gender: 'femenino',
+                price: 310,
+                volume: '100 ml',
+                image: 'https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=600&q=80',
+                description: 'Rinde homenaje a la flor más icónica de la perfumería: la Rosa de Grasse. Su aroma combina la elegancia atemporal con notas dulces de lichi y vainilla francesa.',
+                notes: {
+                    salida: 'Lichi, Bergamota, Frambuesa dulce',
+                    corazon: 'Rosa de Grasse, Peonía, Flor de Azahar',
+                    fondo: 'Vainilla Francesa, Caramelo, Ámbar'
+                }
+            },
+            {
+                id: 'hnd-04',
+                name: 'Spot for Her',
+                tagline: 'La vida es hoy, llena de energía y brillo',
+                type: 'Deo Colonia',
+                gender: 'femenino',
+                price: 260,
+                volume: '75 ml',
+                image: 'https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=600&q=80',
+                description: 'Creado para la mujer decidida que ama brillar y dejar huella. Presenta una deliciosa e irreverente combinación de notas de cereza negra, frambuesa y sándalo.',
+                notes: {
+                    salida: 'Cereza Negra, Mandarina Italiana, Frambuesa',
+                    corazon: 'Pétalos de Violeta, Jazmín Sambac',
+                    fondo: 'Sándalo, Vainilla de Madagascar, Ámbar'
+                }
+            },
+            {
+                id: 'hnd-05',
+                name: 'Empire Gold',
+                tagline: 'Poder, sofisticación y éxito absoluto',
+                type: 'Eau de Parfum',
+                gender: 'masculino',
+                price: 310,
+                volume: '100 ml',
+                image: 'https://images.unsplash.com/photo-1595425970377-c9703cf48b6d?auto=format&fit=crop&w=600&q=80',
+                description: 'La versión más lujosa de la línea Empire. Una explosión de frescura cítrica con el poder sofisticado de la manzana de oro y el refinado cuero amaderado.',
+                notes: {
+                    salida: 'Manzana de Oro, Bergamota, Toronja',
+                    corazon: 'Menta Piperita, Salvia, Acorde de Cuero',
+                    fondo: 'Sándalo, Madera de Ébano, Vetiver'
+                }
+            },
+            {
+                id: 'hnd-06',
+                name: 'Grace Midnight',
+                tagline: 'El misterio de la noche hecho fragancia',
+                type: 'Eau de Parfum',
+                gender: 'femenino',
+                price: 310,
+                volume: '100 ml',
+                image: 'https://images.unsplash.com/photo-1588405748373-122b2321bc85?auto=format&fit=crop&w=600&q=80',
+                description: 'Ganador de premios de diseño y aroma internacional. Expresa todo el encanto y sensualidad femenina mediante acordes dulces de mandarina, frambuesa y caramelo.',
+                notes: {
+                    salida: 'Mandarina, Frambuesa, Lichi silvestre',
+                    corazon: 'Rosa de Mayo, Jazmín Egipcio, Caramelo',
+                    fondo: 'Ámbar, Almizcle, Vainilla Dulce'
+                }
+            }
+        ];
+
+        // Estado de la Aplicación en Memoria
+        let cart = [];
+        let activeFilter = 'all';
+
+        // Al iniciar la página
+        window.addEventListener('DOMContentLoaded', () => {
+            renderProducts();
+            loadCartFromSession();
         });
 
-        // FAQs Accordion
+        // 1. RENDERIZADO DEL CATÁLOGO CON EFECTOS MODERNOS
+        function renderProducts() {
+            const grid = document.getElementById('product-grid');
+            grid.innerHTML = '';
+
+            const filtered = products.filter(p => activeFilter === 'all' || p.gender === activeFilter);
+
+            filtered.forEach(p => {
+                const card = document.createElement('div');
+                card.className = "bg-luxury-charcoal border border-white/5 rounded-3xl p-6 hover:shadow-[0_15px_30px_rgba(212,175,55,0.08)] hover:border-luxury-gold/30 transition-all duration-500 flex flex-col justify-between group";
+                
+                card.innerHTML = `
+                    <div class="relative overflow-hidden rounded-2xl aspect-square mb-6 flex items-center justify-center bg-luxury-obsidian/40">
+                        <img src="${p.image}" alt="${p.name}" class="w-48 h-48 object-contain filter drop-shadow-[0_10px_20px_rgba(0,0,0,0.5)] group-hover:scale-105 transition-transform duration-500 rounded-lg">
+                        <span class="absolute top-4 left-4 bg-white/5 border border-white/10 text-slate-300 font-semibold text-[10px] tracking-widest px-3 py-1.5 rounded-full uppercase">
+                            ${p.type}
+                        </span>
+                        <span class="absolute top-4 right-4 bg-luxury-gold/10 border border-luxury-gold/20 text-luxury-gold font-bold text-[9px] tracking-widest px-3 py-1.5 rounded-full uppercase">
+                            ${p.volume}
+                        </span>
+                        
+                        <!-- Capa Hover para Vista Rápida -->
+                        <div class="absolute inset-0 bg-luxury-obsidian/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center blur-overlay">
+                            <button onclick="openQuickView('${p.id}')" class="bg-white text-luxury-obsidian hover:bg-luxury-gold hover:text-luxury-obsidian text-xs font-bold uppercase tracking-wider py-3 px-6 rounded-full transition-all duration-300 transform translate-y-4 group-hover:translate-y-0 duration-300 shadow-xl">
+                                Vista Rápida
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <p class="text-[10px] uppercase tracking-wider text-luxury-gray">${p.gender === 'masculino' ? 'Para Él' : 'Para Ella'}</p>
+                                <h3 class="font-serif text-xl font-bold text-white tracking-wide mt-1">${p.name}</h3>
+                            </div>
+                            <span class="font-serif text-xl font-bold text-luxury-gold">Bs. ${p.price}</span>
+                        </div>
+                        
+                        <p class="text-luxury-gray text-xs font-light line-clamp-2 h-8 leading-relaxed">${p.tagline}</p>
+
+                        <div class="flex gap-2 pt-2">
+                            <!-- Botón Añadir directo -->
+                            <button onclick="addToCart('${p.id}')" class="flex-grow bg-white/5 hover:bg-gradient-to-r hover:from-luxury-goldDark hover:via-luxury-gold hover:to-luxury-goldDark hover:text-luxury-obsidian text-white border border-white/10 hover:border-transparent font-bold text-[10px] tracking-[0.2em] uppercase py-3.5 px-4 rounded-xl transition-all duration-300">
+                                Añadir al Carrito
+                            </button>
+                        </div>
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+        }
+
+        // 2. FILTRADO DINÁMICO DE PRODUCTOS
+        function filterProducts(gender) {
+            activeFilter = gender;
+            
+            // Actualizar clases de botones de filtro
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.className = "filter-btn text-luxury-gray hover:text-white text-xs font-bold uppercase tracking-wider py-2.5 px-6 rounded-full transition-all duration-300";
+            });
+
+            const activeBtn = document.getElementById(`btn-filter-${gender}`);
+            if (activeBtn) {
+                activeBtn.className = "filter-btn bg-luxury-gold text-luxury-obsidian text-xs font-bold uppercase tracking-wider py-2.5 px-6 rounded-full transition-all duration-300 active-filter";
+            }
+
+            renderProducts();
+        }
+
+        // 3. SECCIÓN PREGUNTAS FRECUENTES (FAQ INTERACTIVO)
         function toggleFAQ(id) {
             const content = document.getElementById(`faq-content-${id}`);
             const icon = document.getElementById(`faq-icon-${id}`);
@@ -500,67 +607,263 @@
             }
         }
 
-        // Lógica del Scent Profiler Quiz
-        const userAnswers = {
-            1: '',
-            2: '',
-            3: ''
-        };
-
-        function selectOption(step, value, currentStepId, nextStepId) {
-            userAnswers[step] = value;
+        // 4. LÓGICA DEL CARRITO DE COMPRAS (DENTRO DE MEMORIA)
+        function toggleCart(show) {
+            const backdrop = document.getElementById('cart-drawer-backdrop');
+            const drawer = document.getElementById('cart-drawer');
             
-            // Ocultar paso actual
-            document.getElementById(currentStepId).classList.add('hidden');
-            
-            // Mostrar paso siguiente
-            if (nextStepId === 'result') {
-                calculateResult();
+            if (show) {
+                backdrop.classList.remove('hidden');
+                // Forzar reflow para animación
+                backdrop.offsetHeight;
+                backdrop.classList.add('opacity-100');
+                drawer.classList.remove('translate-x-full');
             } else {
-                document.getElementById(nextStepId).classList.remove('hidden');
+                backdrop.classList.remove('opacity-100');
+                drawer.classList.add('translate-x-full');
+                setTimeout(() => {
+                    backdrop.classList.add('hidden');
+                }, 300);
             }
         }
 
-        function calculateResult() {
-            const resultStep = document.getElementById('result-step');
-            resultStep.classList.remove('hidden');
+        function addToCart(productId) {
+            const product = products.find(p => p.id === productId);
+            if (!product) return;
 
-            const title = document.getElementById('result-title');
-            const desc = document.getElementById('result-desc');
-            const waBtn = document.getElementById('result-wa-btn');
-
-            let recommendation = "";
-            let description = "";
-
-            // Lógica de recomendación según las preferencias
-            if (userAnswers[3] === 'Amaderadas & Cuero') {
-                recommendation = "Maderas de Lujo & Cuero Oriental";
-                description = "Perfecto para proyectar estatus y poder. Sugerimos fragancias icónicas y de proyección premium como Bleu de Chanel (Eau de Parfum) o Tom Ford Ombré Leather.";
-            } else if (userAnswers[3] === 'Dulces & Especiadas') {
-                recommendation = "Ámbar Cálido, Vainilla & Especias Sensuales";
-                description = "Ideal para salidas nocturnas y conquistas románticas donde buscas llamar la atención. Sugerimos fragancias ultra-seductoras como Armani Stronger With You o Carolina Herrera Bad Boy Extreme.";
-            } else if (userAnswers[3] === 'Frescas & Cítricas') {
-                recommendation = "Cítrico Marino, Menta & Elegancia Deportiva";
-                description = "Excelente opción para destacar en climas templados o de tarde sin agobiar el olfato. Sugerimos el clásico eterno Acqua Di Gio Profondo o Versace Man Eau Fraîche.";
+            const existing = cart.find(item => item.product.id === productId);
+            if (existing) {
+                existing.quantity++;
             } else {
-                recommendation = "Florales Radiantes & Frutos Exóticos Exclusivos";
-                description = "Un aroma único y vibrante ideal para la sofisticación diaria y eventos ejecutivos de vanguardia. Recomendamos fragancias vanguardistas como Creed Aventus o Baccarat Rouge 540.";
+                cart.push({ product, quantity: 1 });
             }
 
-            title.innerText = recommendation;
-            desc.innerText = description;
+            updateCartUI();
+            saveCartToSession();
 
-            // Formular link personalizado de WhatsApp con los resultados del test
-            const waText = `Hola Esencia Total, acabo de completar su test de Aroma y me recomendó la familia: *${recommendation}*.\n\nPreferencia de Estilo: ${userAnswers[1]}\nOcasión: ${userAnswers[2]}\n\n¿Tienen perfumes disponibles de este catálogo para asesorarme?`;
-            waBtn.href = `https://wa.me/59164521957?text=${encodeURIComponent(waText)}`;
+            // Pequeña notificación visual en el badge del carrito (bounce)
+            const badge = document.getElementById('cart-badge');
+            badge.classList.remove('scale-0');
+            badge.classList.add('scale-110');
+            setTimeout(() => {
+                badge.classList.remove('scale-110');
+            }, 300);
+
+            // Abre el panel del carrito de forma automatizada y fluida al añadir un perfume
+            toggleCart(true);
         }
 
-        function resetQuiz() {
-            document.getElementById('result-step').classList.add('hidden');
-            document.getElementById('step-1').classList.remove('hidden');
-            userAnswers[1] = '';
-            userAnswers[2] = '';
-            userAnswers[3] = '';
+        function updateCartQuantity(productId, change) {
+            const item = cart.find(item => item.product.id === productId);
+            if (!item) return;
+
+            item.quantity += change;
+            if (item.quantity <= 0) {
+                cart = cart.filter(item => item.product.id !== productId);
+            }
+
+            updateCartUI();
+            saveCartToSession();
+        }
+
+        function removeFromCart(productId) {
+            cart = cart.filter(item => item.product.id !== productId);
+            updateCartUI();
+            saveCartToSession();
+        }
+
+        function updateCartUI() {
+            const container = document.getElementById('cart-items-container');
+            const totalItems = cart.reduce((acc, item) => acc + item.quantity, 0);
+            
+            // Actualizar el Badge del Header
+            const badge = document.getElementById('cart-badge');
+            badge.innerText = totalItems;
+            if (totalItems > 0) {
+                badge.classList.remove('scale-0');
+            } else {
+                badge.classList.add('scale-0');
+            }
+
+            // Si está vacío
+            if (cart.length === 0) {
+                container.innerHTML = `
+                    <div class="flex flex-col items-center justify-center h-full text-center text-luxury-gray space-y-4 py-12">
+                        <i class="fa-solid fa-basket-shopping text-4xl text-white/5"></i>
+                        <p class="text-sm">Tu carrito de lujo está vacío actualmente.</p>
+                        <button onclick="toggleCart(false)" class="text-xs text-luxury-gold hover:underline font-bold uppercase tracking-wider">Explorar perfumes</button>
+                    </div>
+                `;
+                document.getElementById('cart-subtotal').innerText = 'Bs. 0';
+                document.getElementById('cart-total').innerText = 'Bs. 0';
+                return;
+            }
+
+            container.innerHTML = '';
+            let subtotal = 0;
+
+            cart.forEach(item => {
+                const itemCost = item.product.price * item.quantity;
+                subtotal += itemCost;
+
+                const element = document.createElement('div');
+                element.className = "flex items-center justify-between gap-4 p-4 bg-luxury-obsidian/60 border border-white/5 rounded-2xl relative group";
+                element.innerHTML = `
+                    <img src="${item.product.image}" alt="${item.product.name}" class="w-16 h-16 object-contain bg-luxury-charcoal/50 rounded-lg p-1">
+                    
+                    <div class="flex-grow space-y-1">
+                        <h4 class="font-serif text-sm font-semibold text-white leading-tight">${item.product.name}</h4>
+                        <p class="text-[10px] text-luxury-gray tracking-wide uppercase">${item.product.type} • ${item.product.volume}</p>
+                        <span class="text-xs font-bold text-luxury-gold block">Bs. ${item.product.price}</span>
+                    </div>
+
+                    <!-- Modificador de cantidades premium -->
+                    <div class="flex flex-col items-center gap-1">
+                        <div class="flex items-center border border-white/10 rounded-lg bg-luxury-charcoal overflow-hidden text-xs">
+                            <button onclick="updateCartQuantity('${item.product.id}', -1)" class="px-2 py-1 text-luxury-gray hover:text-white hover:bg-white/5">-</button>
+                            <span class="px-2 font-bold text-white text-[11px]">${item.quantity}</span>
+                            <button onclick="updateCartQuantity('${item.product.id}', 1)" class="px-2 py-1 text-luxury-gray hover:text-white hover:bg-white/5">+</button>
+                        </div>
+                        <button onclick="removeFromCart('${item.product.id}')" class="text-[10px] text-red-400/70 hover:text-red-400 mt-1 uppercase tracking-wider font-semibold">Eliminar</button>
+                    </div>
+                `;
+                container.appendChild(element);
+            });
+
+            document.getElementById('cart-subtotal').innerText = `Bs. ${subtotal}`;
+            document.getElementById('cart-total').innerText = `Bs. ${subtotal}`;
+        }
+
+        // Guardado persistente local básico
+        function saveCartToSession() {
+            localStorage.setItem('hnd_cart_state', JSON.stringify(cart));
+        }
+
+        function loadCartFromSession() {
+            const saved = localStorage.getItem('hnd_cart_state');
+            if (saved) {
+                try {
+                    cart = JSON.parse(saved);
+                    updateCartUI();
+                } catch(e) {
+                    cart = [];
+                }
+            }
+        }
+
+        // 5. PASARELA DE WHATSAPP (CONSTRUCCIÓN DEL MENSAJE)
+        function sendOrder() {
+            if (cart.length === 0) {
+                alert("Por favor, añade al menos un perfume al carrito antes de realizar tu pedido.");
+                return;
+            }
+
+            const clientName = document.getElementById('client-name').value.trim();
+            const clientCity = document.getElementById('client-city').value.trim();
+
+            if (!clientName || !clientCity) {
+                alert("Para brindarte una atención VIP de primer nivel, por favor ingresa tu Nombre y Ciudad para coordinar.");
+                return;
+            }
+
+            let orderDetails = "";
+            let grandTotal = 0;
+
+            cart.forEach(item => {
+                const itemTotal = item.product.price * item.quantity;
+                grandTotal += itemTotal;
+                orderDetails += `• *${item.quantity} x ${item.product.name}* (${item.product.type}) - Bs. ${item.product.price} c/u\n`;
+            });
+
+            const baseMessage = `🛍️ *¡Hola! Quiero realizar un pedido en la tienda HND:*
+__________________________________
+*Cliente:* ${clientName}
+*Destino:* ${clientCity}
+__________________________________
+*Productos:*
+${orderDetails}
+*Total a Pagar:* Bs. ${grandTotal}
+__________________________________
+Por favor, confírmame la disponibilidad para coordinar el pago y la entrega inmediata. ✨`;
+
+            const encodedText = encodeURIComponent(baseMessage);
+            const whatsappUrl = `https://wa.me/59164521957?text=${encodedText}`;
+
+            window.open(whatsappUrl, '_blank');
+        }
+
+        // 6. DETALLE QUICK VIEW (MODAL CON NOTAS OLFATIVAS)
+        function openQuickView(productId) {
+            const p = products.find(prod => prod.id === productId);
+            if (!p) return;
+
+            const modalContent = document.getElementById('quick-view-content');
+            modalContent.innerHTML = `
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center pt-4">
+                    <div class="flex items-center justify-center bg-luxury-obsidian/50 border-gold-subtle rounded-2xl p-6 relative">
+                        <span class="absolute top-4 left-4 bg-white/5 border border-white/10 text-slate-300 font-semibold text-[10px] tracking-widest px-3 py-1.5 rounded-full uppercase">
+                            ${p.type}
+                        </span>
+                        <img src="${p.image}" alt="${p.name}" class="w-56 h-56 object-contain filter drop-shadow-[0_15px_30px_rgba(0,0,0,0.6)]">
+                    </div>
+
+                    <div class="space-y-6">
+                        <div>
+                            <span class="text-luxury-gold text-xs font-bold uppercase tracking-widest">${p.gender === 'masculino' ? 'Elegancia Masculina' : 'Sofisticación Femenina'} • ${p.volume}</span>
+                            <h3 class="font-serif text-3xl font-extrabold text-white mt-1">${p.name}</h3>
+                            <p class="font-serif text-2xl font-bold text-luxury-gold mt-2">Bs. ${p.price}</p>
+                        </div>
+
+                        <p class="text-slate-300 text-sm font-light leading-relaxed">${p.description}</p>
+
+                        <!-- Pirámide Olfativa Desglosada -->
+                        <div class="space-y-3 bg-luxury-obsidian/40 border border-white/5 p-4 rounded-xl">
+                            <p class="text-[11px] uppercase tracking-wider font-bold text-luxury-gold border-b border-white/5 pb-1">Pirámide Olfativa</p>
+                            <div class="grid grid-cols-3 gap-2 text-center text-[10px]">
+                                <div class="space-y-1">
+                                    <p class="font-bold text-white uppercase tracking-wider">Salida</p>
+                                    <p class="text-luxury-gray font-light line-clamp-2 h-7 leading-tight">${p.notes.salida}</p>
+                                </div>
+                                <div class="space-y-1 border-x border-white/5 px-2">
+                                    <p class="font-bold text-white uppercase tracking-wider">Corazón</p>
+                                    <p class="text-luxury-gray font-light line-clamp-2 h-7 leading-tight">${p.notes.corazon}</p>
+                                </div>
+                                <div class="space-y-1">
+                                    <p class="font-bold text-white uppercase tracking-wider">Fondo</p>
+                                    <p class="text-luxury-gray font-light line-clamp-2 h-7 leading-tight">${p.notes.fondo}</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button onclick="addToCart('${p.id}'); toggleQuickView(false);" class="w-full bg-gradient-to-r from-luxury-goldDark via-luxury-gold to-luxury-goldDark text-luxury-obsidian py-4 rounded-full font-bold text-xs tracking-widest uppercase hover:shadow-[0_0_20px_rgba(212,175,55,0.3)] transition-all duration-300 flex items-center justify-center gap-2">
+                            Añadir al Carrito
+                        </button>
+                    </div>
+                </div>
+            `;
+
+            toggleQuickView(true);
+        }
+
+        function toggleQuickView(show) {
+            const backdrop = document.getElementById('quick-view-backdrop');
+            const modal = document.getElementById('quick-view-modal');
+
+            if (show) {
+                backdrop.classList.remove('hidden');
+                // Forzar reflow
+                backdrop.offsetHeight;
+                backdrop.classList.add('opacity-100');
+                modal.classList.remove('scale-90');
+                modal.classList.add('scale-100');
+            } else {
+                backdrop.classList.remove('opacity-100');
+                modal.classList.remove('scale-100');
+                modal.classList.add('scale-90');
+                setTimeout(() => {
+                    backdrop.classList.add('hidden');
+                }, 300);
+            }
         }
     </script>
 </body>
